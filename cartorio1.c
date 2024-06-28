@@ -4,9 +4,10 @@
 
 
 int main () 
-{
-      setlocale(LC_ALL, "portuguese");     
-      printf("### Cartório da EBAC ###\n\n");
+{ 
+      int opcao=0; //Definindo variáveis
+      setlocale(LC_ALL, "portuguese"); //Definindo a linguagem     
+      printf("### Cartório da EBAC ###\n\n"); //Início do menu
       printf("Escolha a Opção desejada no menu: \n\n");
       printf("\t1 - Registrar nomes:\n");
       printf("\t2 - Consultar nomes:\n");
