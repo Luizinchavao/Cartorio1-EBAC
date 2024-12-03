@@ -44,13 +44,13 @@ int main ()
       	system("cls");       // O sistema vai deletar todas as mensagens limpar a tela
       	
       	
-      	switch(opcao) // Estamos dizendo: Computador, analisa essa variável pra mim
+      	switch(opcao)  // Estamos dizendo: Computador, analisa essa variável pra mim
       	{
-      		case 1:  // Dois pontos (:) no Switch case é igual abrir uma chaves {}
+      		case 1:    // Dois pontos (:) no Switch case é igual abrir uma chaves {}
 			registro();
-			break;  // break é como se agente está fechando as chaves. Case 1: (:) abriu e break;  (;) fechou break;
+			break;    //Como agente está fechando as chaves. Case 1: (:) abriu. Break; (;) fechou 
 			
-			case 2: // Caso, a opção for 2
+			case 2:   // Caso, a opção for 2
 			consulta();
 			break;
 			
