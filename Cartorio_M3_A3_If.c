@@ -4,12 +4,13 @@
 
 
 int main () 
-    { 
+  { 
     int opcao=0;   //Definindo variáveis com valor inicial = 0. // 1 igual(=) esta atribuindo o valor
     int laco=1;
       
     for(laco=1;laco=1;)
     {
+    	system("cls");
 	  
   		setlocale(LC_ALL, "portuguese"); //Definindo a linguagem que podemos usar acentos  
 	      
@@ -26,21 +27,24 @@ int main ()
       
       	if(opcao==1) // Início da Seleçao.       2 Iguais == Está fazendo uma comparação
      	{
-    		printf("Você escolheu o registro de nomes!");
+    		printf("Você escolheu o registro de nomes!\n");
+    		system("pause");
      	}	
       	if(opcao==2)	
       	{
-	   		printf("Você escolheu consultar os nomes!");
+	   		printf("Você escolheu consultar os nomes!\n");
+	   		system("pause");
 	  	}
      	if(opcao==3) // Sempre vai perguntando para o computador ex:  if= se a variavel opcao que é igual = 3 . Então computador você fala para o usuário no printf
       	{
-      		printf("Você escolheu deletar os nomes!"); // Ponto e virgula = ; sempre usar qundo for uma instruçao para o computador
+      		printf("Você escolheu deletar os nomes!\n"); // Ponto e virgula = ; sempre usar qundo for uma instruçao para o computador
+      		system("pause");
 	  	}
       	if(opcao >=4 || opcao <=0) // || essa tecla chama-se PAIPE significa Ou, EX: computador se o valor que o usuario digitar for >=4 ou <=0 fala o que esta no printf
       	{
-      		printf("Essa opção não está disponível!");
-      	}
-	  	         
+      		printf("Essa opção não está disponível!\n");
+      		system("pause");
+      	}    
    }
 } 
    
