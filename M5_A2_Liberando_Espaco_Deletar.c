@@ -3,7 +3,7 @@
 #include <locale.h>     //biblioteca de alocações de texto por região
 #include <string.h>     //biblioteca responsável por cuidar das string
 
-int registro()
+int registro()          //Função responsável por cadastrar os usuários no sistema
 {
 	char arquivo[40];     //Criando as variáveis que agente precisa. char arquivo do tipo string [] de tamanho 40
 	char cpf[40];
@@ -11,13 +11,13 @@ int registro()
 	char sobrenome[40];
 	char cargo[40];
 	
-	printf("Digite o CPF a ser cadastrado: ");
+	printf("Digite o CPF a ser cadastrado: "); //Coletando innformação do usuário
 	scanf("%s", cpf);			//Scanf-> Armazena o CPF que o usuário digitar na string com %s
 	
 	strcpy(arquivo,cpf);        // Responsável por copiar os valores das string
 	                            // Estamos chamando uma função que ja está pronta pelo sistema.FILE
 	FILE *file;                  // Cria o arquivo no banco de dados do computador
-	file= fopen(arquivo, "w");  // Fopen abre o arquivo e "w" write para escrever a informação 
+	file= fopen(arquivo, "w");  // Fopen abre o arquivo e "w" write significa escrever a informação 
 	fprintf(file,cpf);          // Salva o valor da variável
 	fclose(file);               // Fecha o arquivo
 	
@@ -129,7 +129,7 @@ int main ()
       
       	scanf("%d", &opcao); // Scanf -> Armazenando na variavel opcao o valor que o usuario digitar. %d-> Armazenar variavel do tipo inteiro 
                            
-      	system("cls");       // O sistema vai deletar todas as mensagens limpar a tela
+      	system("cls");       // Resonsavel por limpar a tela. O sistema vai deletar todas as mensagens 
       	
       	
       	switch(opcao) // Estamos dizendo: Computador, analisa essa variável pra mim
