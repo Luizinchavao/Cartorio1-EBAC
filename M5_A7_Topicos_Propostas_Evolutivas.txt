@@ -1,0 +1,74 @@
+Módulo 5 - Aula 6 - Exercício
+
+Entrega da tarefa do Módulo 5 
+
+
+- Solicitações da nossa tarefa:
+
+* Tópicos da parte 1 do índice, nossa tarefa de entrega do Documento de Arquitetura de Sotfware.
+
+* Proposta de evolutiva - EBAC vai avaliar nossa capacidade de propor novas soluções
+
+______________________________________________________________________________________________________
+
+                                   * Tópicos da parte 1 do índice 
+
+
+1.1 Finalidade ->
+
+
+- Realizar o registro de nomes de alunos, professores e usuários da plataforma da EBAC.
+- O sistema tem como finalidade registrar, consultar e excluir nomes internos da instituição (EBAC), visando manter um cadastro atualizado e organizado.
+- Benefícios: Facilitar a organização e consulta dos dados dos alunos, otimizando processos administrativos.
+- Público-alvo: Administradores e usuários autorizados da instituição.
+
+
+
+1.2 Escopo ->
+
+
+- O escopo do sistema abrange as funcionalidades de cadastro, consulta e exclusão de nomes. Não estão incluídas funcionalidades de edição de registros ou geração de relatórios.
+- Funcionalidades: Cadastro, consulta, exclusão, armazenamento em banco de dados não relacional, para um sitema interno
+
+
+1.3 Definições, Acrônimos e Abreviações ->
+
+
+- Cadastrar: Conjunto de registros de nomes internos
+- Consultar: Localizar usuário cadastrado
+- Deletar: Permite excluir o CPF desejado  
+- CPF: Cadastro de Pessoa Física - Utilizamos como chave primária para consulta
+
+
+1.4 Visão Geral ->
+
+
+- O sistema é desenvolvido em linguagem C.
+- A interface com o usuário é baseada em um menu de texto.
+- Os dados são armazenados em um arquivo texto.
+- A lógica do sistema é dividida em módulos (funções) responsáveis por cada funcionalidade.
+
+
+________________________________________________________________________________________________________________________
+
+
+                                       * Proposta de Evolutivas
+
+
+- Aprimoramentos Técnicos:
+
+
+
+* Validação de dados: Inclua passos específicos para validar os dados de entrada, como verificar se o CPF possui o formato correto, se o nome contém apenas letras, etc.
+
+* Migração para Banco de Dados Relacional: Considerar a migração para um banco de dados relacional (como MySQL, PostgreSQL, ou MongoDB.) para aproveitar os benefícios de relacionamentos entre dados e realizar consultas mais complexas.
+
+* Interface com o usuário: Criar uma interface intuitiva e amigável para o usuário, utilizando menus e mensagens claras.
+
+* Incluir uma mensagem no menu principal: " Se você ainda não é registrado, clique aqui para registrar agora! "
+
+* Opção de sair do programa: Incluir uma opção para o usuário sair do programa a qualquer momento.
+
+
+
+ 
