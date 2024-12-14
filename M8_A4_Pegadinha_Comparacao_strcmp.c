@@ -112,15 +112,16 @@ int deletar()
 int main ()  
 	
   	{
+  		
     int opcao=0; //Definindo variáveis que equivale a 0. // 1 igual(=) esta atribuindo o valor
     int laco=1;
-    char senhadigitada[20]; // Supondo que senhadigitada seja uma string de tamanho suficiente
+    char senhadigitada[10] = "a"; // Supondo que senhadigitada seja uma string de tamanho suficiente
     
     printf("### Cartório da EBAC ###\n\n");
     printf("Login de administrador!\n\nDigite a sua senha: ");
     scanf("%s", senhadigitada);
     
-    if (strcmp(senhadigitada, "admin") == 0) // Comparação corrigida
+    if (senhadigitada[10] == "admin")
     {
     	    	
 		for(laco=1;laco=1;)
@@ -170,8 +171,8 @@ int main ()
     }
     
     else
-	 { printf("Senha incorreta!\n"); 
-	 } 
+	  printf("Senha incorreta!\n"); 
+	  
  }
       
          
