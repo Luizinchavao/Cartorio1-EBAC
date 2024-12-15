@@ -5,12 +5,16 @@
 
 int registro()
 
-{   char arquivo[40]; // Char estamos criando o conjunto de banco de dados [40] significa que possui a quantidade máxima de caracteres da variavel(String)
+{   
+	setlocale(LC_ALL, "portuguese"); //Definindo a linguagem que podemos usar acentos
+	
+	char arquivo[40]; // Char estamos criando o conjunto de banco de dados [40] significa que possui a quantidade máxima de caracteres da variavel(String)
 	char cpf[40];
     char nome[40];
     char sobrenome[40];
     char cargo[40];
-     
+    
+         
     printf("Digite o CPF a ser cadastrado: ");
     scanf("%s", cpf);            // Armazena a variavel, %s dentro da string  cpf
     
@@ -118,12 +122,14 @@ int main ()
     char senhadigitada[] = "a"; // Supondo que senhadigitada seja uma string de tamanho suficiente
     int comparacao; // Criando uma variável do tipo int comparação, pois ela vai ser o resultado da conta
     
+    setlocale(LC_ALL, "portuguese"); //Definindo a linguagem para não dar um erro de digitação no inicio.
+    
     printf("### Cartório da EBAC ###\n\n");
     printf("Login de administrador!\n\nDigite a sua senha: ");
     scanf("%s", senhadigitada);
                                                 
-    comparacao = stcmp(senhadigitada, "admin");  // Vamos comparar as duas variáveis e ver se elas têm o mesmo número // Antes de chamar stcmp -> tem que criar uma variável do tipo int
-                                                  
+    comparacao = strcmp(senhadigitada, "admin");  // Vamos comparar as duas variáveis e ver se elas têm o mesmo número 
+                                                  // Antes de chamar stcmp -> tem que criar uma variável do tipo int
     if (comparacao == 0 )
     {
     	system ("cls");
@@ -173,7 +179,14 @@ int main ()
         }
     }
     
-    else
+    else{
+
+		printf("\nSenha Incorreta!\n\n");
+		system("pause");
+		system("cls");
+		main();
+
+}
 	  printf("Senha incorreta!\n"); 
 	  
  }
