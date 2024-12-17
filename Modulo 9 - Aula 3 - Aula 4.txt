@@ -1,0 +1,129 @@
+
+https://www.db-fiddle.com/f/j4dUDZBd9pUnPKZ2t4kPws/0      
+ link M9 - A3
+
+DB FIDDER
+
+create table usuarios
+
+(
+ 	cpf integer,
+  	nome varchar(50),
+  	sobrenome varchar(50),
+ 	cargo varchar(50),
+  	curso_id integer
+);
+
+create table cursos
+
+(
+	id integer,
+  	nome_curso varchar(50),
+  	professor varchar(50),
+  	categoria varchar(50)
+  
+);
+
+
+insert into usuarios (cpf, nome, sobrenome, cargo, curso_id)
+values ('155', 'Hector', 'Gomez', 'Jogador', '1');
+
+insert into usuarios (cpf, nome, sobrenome, cargo, curso_id)
+values ('157', 'Ângela', 'Gomez', 'Princesa', '1');
+
+insert into usuarios (cpf, nome, sobrenome, cargo, curso_id)
+values ('357', 'Maribel', 'Gomez', 'Jogadora', '1');
+
+insert into usuarios (cpf, nome, sobrenome,cargo, curso_id)
+values ('900', 'Plácido', 'Gomez', 'Mestre', '2');
+
+insert into cursos (id, nome_curso, professor, categoria)
+values ( '1', 'TI do zero', 'Pedro Brocaldi', 'Programação');
+
+insert into cursos (id, nome_curso, professor, categoria)
+values ( '2', 'SQL', 'Carlos Pousada', 'Dados');
+
+
+select * from usuarios;
+
+
+
+
+
+
+
+
+SQL FIDDER
+
+-- INIT database
+CREATE TABLE usuarios
+(
+ 	cpf integer,
+	nome varchar(50),
+  	sobrenome varchar(50),
+	cargo varchar(50),
+  	curso_id integer
+);
+create table cursos
+
+(
+	id integer,
+  	nome_curso varchar(50),
+  	professor varchar(50),
+  	categoria varchar(50)
+  
+);
+INSERT INTO usuarios(cpf, nome, sobrenome, cargo, curso_id) VALUES ('155', 'Hector', 'Gomez', 'Jogador', '1');
+INSERT INTO usuarios(cpf, nome, sobrenome, cargo, curso_id) VALUES ('138', 'Ângela', 'Gomez', 'Princesa', '1');
+INSERT INTO usuarios(cpf, nome, sobrenome, cargo, curso_id) VALUES ('357', 'Maribel', 'Gomez', 'Professora', '2');
+INSERT INTO usuarios(cpf, nome, sobrenome, cargo, curso_id) VALUES ('900', 'Plácido', 'Gomez', 'Mestre', '2');           
+INSERT INTO cursos(id, nome_curso, professor, categoria) VALUES('1', 'TI do Zero', 'Pedro Brocaldi', 'Programação');
+INSERT INTO cursos(id, nome_curso, professor, categoria)VALUES ('2', 'SQL', 'Carlos Pousada', 'Dados');
+
+
+-- QUERY database
+SELECT * FROM usuarios;
+SELECT * FROM usuarios WHERE cpf = 900;
+
+
+
+
+ SELECT * FROM usuarios WHERE cpf = 900;
+
+
+
+
+
+
+insert into cursos (id, nome_curso, professor, categoria)
+values ('1', 'TI do Zero', 'Pedro Brocaldi', 'Programação');
+
+insert into cursos (id, nome_curso, professor, categoria)
+values ('2', 'SQL', 'Carlos Pousada', 'Dados');
+
+
+
+insert into cursos (id, nome_curso, professor, categoria)
+values ('1', 'TI do Zero', 'Pedro Brocaldi', 'Programação');
+
+insert into cursos (id, nome_curso, professor, categoria)
+values ('2', 'SQL', 'Carlos Pousada', 'Dados');
+
+
+
+
+
+Aula 4 - Integrações 
+
+Já sabemos:
+
+-> como faz o select 
+-> como cria a tabela
+-> como insere dados na tabela
+-> como atualiza a tabela
+-> como deleta algum elemento (dado) na tabela
+-> como faz diversos tipos de buscas na tabela
+
+SQL é muito importante
+
+
