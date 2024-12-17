@@ -1,5 +1,7 @@
 
-https://www.db-fiddle.com/f/j4dUDZBd9pUnPKZ2t4kPws/0      
+https://www.db-fiddle.com/f/j4dUDZBd9pUnPKZ2t4kPws/3
+
+ 
  link M9 - A3
 
 DB FIDDER
@@ -33,6 +35,12 @@ values ('157', 'Ângela', 'Gomez', 'Princesa', '1');
 
 insert into usuarios (cpf, nome, sobrenome, cargo, curso_id)
 values ('357', 'Maribel', 'Gomez', 'Jogadora', '1');
+
+insert into (cpf, nome, sobrenome, cargo, curso_id)
+values ('157357', 'Maribel', 'Pousada', 'Jogadora', '1');
+
+insert into usuarios (cpf, nome,sobrenome, cargo, curso_id)
+values ('380', 'Nilza', 'Barbosa Lima', ' Mestre', '2');
 
 insert into usuarios (cpf, nome, sobrenome,cargo, curso_id)
 values ('900', 'Plácido', 'Gomez', 'Mestre', '2');
@@ -82,33 +90,9 @@ INSERT INTO cursos(id, nome_curso, professor, categoria)VALUES ('2', 'SQL', 'Car
 
 
 -- QUERY database
+
 SELECT * FROM usuarios;
 SELECT * FROM usuarios WHERE cpf = 900;
-
-
-
-
- SELECT * FROM usuarios WHERE cpf = 900;
-
-
-
-
-
-
-insert into cursos (id, nome_curso, professor, categoria)
-values ('1', 'TI do Zero', 'Pedro Brocaldi', 'Programação');
-
-insert into cursos (id, nome_curso, professor, categoria)
-values ('2', 'SQL', 'Carlos Pousada', 'Dados');
-
-
-
-insert into cursos (id, nome_curso, professor, categoria)
-values ('1', 'TI do Zero', 'Pedro Brocaldi', 'Programação');
-
-insert into cursos (id, nome_curso, professor, categoria)
-values ('2', 'SQL', 'Carlos Pousada', 'Dados');
-
 
 
 
@@ -127,3 +111,16 @@ Já sabemos:
 SQL é muito importante
 
 
+
+Aula 5 - Exercício
+
+Atividade subir o arquivo com os comandos desenvolvidos
+
+Comando de Create Table - ok
+Comando de Select - ok
+Comando de insert - ok
+Comando de Update - ok
+
+São Exemplos com a sintaxe
+
+https://www.db-fiddle.com/f/j4dUDZBd9pUnPKZ2t4kPws/3
